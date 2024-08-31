@@ -45,6 +45,7 @@ modules:
       repo-name: flathub
       repo-title: "Flathub (User)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
+        - ca.desrt.dconf-editor
         - com.github.iwalton3.jellyfin-media-player
         - com.github.tchx84.Flatseal
         - com.github.wwmm.easyeffects
