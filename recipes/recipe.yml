@@ -4,7 +4,7 @@ name: bluefin-dx-custom
 description: My custom image based on Bluefin DX using the Blue Build template.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bluefin-dx
+base-image: ghcr.io/ublue-os/bluefin-dx-nvidia
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -37,7 +37,6 @@ modules:
         - Roboto
         - Roboto Mono
         - Roboto Serif
-        - Poppins
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
