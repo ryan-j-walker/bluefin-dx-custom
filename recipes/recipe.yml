@@ -31,8 +31,8 @@ modules:
       - input-leap
       - simple-scan
 
-  # - type: default-flatpaks
-    # notify: true # Send notification after install/uninstall is finished (true/false)
+  - type: default-flatpaks
+    notify: true # Send notification after install/uninstall is finished (true/false)
     # system:
       # If no repo information is specified, Flathub will be used by default
       # install:
@@ -40,11 +40,55 @@ modules:
         # - org.gnome.Loupe
       # remove:
         # - org.gnome.eog
-    # user: {} # Also add Flathub user repo, but no user packages
+    user:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      repo-title: "Flathub (User)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+      install:
+        - ca.desrt.dconf-editor
+        - com.github.iwalton3.jellyfin-media-player
+        - com.github.rafostar.Clapper
+        - com.github.tchx84.Flatseal
+        - com.github.wwmm.easyeffects
+        - com.google.Chrome
+        - com.mattjakeman.ExtensionManager
+        - io.github.dvlv.boxbuddyrs
+        - io.github.flattool.Warehouse
+        - io.github.vikdevelop.SaveDesktop
+        - io.missioncenter.MissionCenter
+        - io.podman_desktop.PodmanDesktop
+        - org.fedoraproject.MediaWriter
+        - org.gnome.Calculator
+        - org.gnome.Characters
+        - org.gnome.Connections
+        - org.gnome.FileRoller
+        - org.gnome.Logs
+        - org.gnome.Loupe
+        - org.gnome.NautilusPreviewer
+        - org.gnome.Papers
+        - org.gnome.TextEditor
+        - org.gnome.Weather
+        - org.gnome.baobab
+        - org.gnome.clocks
+        - org.gnome.font-viewer
+        - org.gtk.Gtk3theme.adw-gtk3
+        - org.gtk.Gtk3theme.adw-gtk3-dark
+        - org.mozilla.firefox
   
   - type: script
     snippets:
       - "rm -f /usr/share/applications/discourse.desktop"
+  
+  - type: fonts
+    fonts:
+      google-fonts:
+        - Roboto
+        - Roboto Mono
+        - Roboto Serif
+
+  - type: gnome-extensions
+    install:
+      - Alphabetical App Grid
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
