@@ -54,7 +54,6 @@ modules:
         - com.mattjakeman.ExtensionManager
         - io.github.dvlv.boxbuddyrs
         - io.github.flattool.Warehouse
-        - io.github.vikdevelop.SaveDesktop
         - io.missioncenter.MissionCenter
         - io.podman_desktop.PodmanDesktop
         - org.fedoraproject.MediaWriter
