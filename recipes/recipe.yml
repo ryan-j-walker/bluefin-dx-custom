@@ -52,6 +52,7 @@ modules:
   - type: script
     snippets:
       - "rm -f /usr/share/applications/discourse.desktop"
+      - "rm -f /usr/share/applications/documentation.desktop"
   
   - type: fonts
     fonts:
