@@ -60,6 +60,8 @@ modules:
         - Roboto
         - Roboto Mono
         - Roboto Serif
+      nerd-fonts:
+        - FiraCode
 
   - type: gnome-extensions
     install:
