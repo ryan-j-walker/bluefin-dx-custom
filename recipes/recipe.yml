@@ -16,6 +16,16 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+  
+  - type: script
+    snippets:
+      - "rm -f /usr/share/applications/discourse.desktop"
+      - "rm -f /usr/share/applications/documentation.desktop"
+      - "curl --create-dirs -OL --output-dir /var/opt/yubico-authenticator https://developers.yubico.com/yubioath-flutter/Releases/yubico-authenticator-latest-linux.tar.gz"
+      # - "tar -xzf /var/opt/yubico-authenticator/yubico-authenticator-latest-linux.tar.gz -C /var/opt/yubico-authenticator/"
+      # - "rm -f /var/opt/yubico-authenticator/yubico-authenticator-latest-linux.tar.gz"
+    scripts:
+      - enable-chrome-yum-repo.sh
 
   - type: rpm-ostree
     # repos:
@@ -48,14 +58,6 @@ modules:
         - org.gnome.Maps
         - org.gnome.World.PikaBackup
         - org.mozilla.Thunderbird
-  
-  - type: script
-    snippets:
-      - "rm -f /usr/share/applications/discourse.desktop"
-      - "rm -f /usr/share/applications/documentation.desktop"
-      - "curl --create-dirs -OL --output-dir /var/opt/yubico-authenticator https://developers.yubico.com/yubioath-flutter/Releases/yubico-authenticator-latest-linux.tar.gz"
-      # - "tar -xzf /var/opt/yubico-authenticator/yubico-authenticator-latest-linux.tar.gz -C /var/opt/yubico-authenticator/"
-      # - "rm -f /var/opt/yubico-authenticator/yubico-authenticator-latest-linux.tar.gz"
   
   - type: fonts
     fonts:
