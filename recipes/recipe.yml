@@ -53,8 +53,8 @@ modules:
     snippets:
       - "rm -f /usr/share/applications/discourse.desktop"
       - "rm -f /usr/share/applications/documentation.desktop"
-      - "curl --create-dirs -OL --output-dir /opt/Yubico Authenticator https://developers.yubico.com/yubioath-flutter/Releases/yubico-authenticator-latest-linux.tar.gz"
-      # - "tar -xvf /opt/Yubico\ Authenticator/yubico-authenticator-latest-linux.tar.gz -C /opt/Yubico\ Authenticator/"
+      - "curl --create-dirs -OL --output-dir /opt/Yubico\ Authenticator https://developers.yubico.com/yubioath-flutter/Releases/yubico-authenticator-latest-linux.tar.gz"
+      # - "tar -xzf /opt/Yubico\ Authenticator/yubico-authenticator-latest-linux.tar.gz -C /opt/Yubico\ Authenticator/"
       # - "rm -f /opt/Yubico\ Authenticator/yubico-authenticator-latest-linux.tar.gz"
   
   - type: fonts
