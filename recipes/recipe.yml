@@ -55,7 +55,7 @@ modules:
       - "rm -f /usr/share/applications/documentation.desktop"
       - "mkdir -p /opt/Yubico\ Authenticator/"
       - "curl -OL https://developers.yubico.com/yubioath-flutter/Releases/yubico-authenticator-latest-linux.tar.gz"
-      # - "tar -xvf yubico-authenticator-latest-linux.tar.gz -C /opt/Yubico\ Authenticator/"
+      - "tar -xvf yubico-authenticator-latest-linux.tar.gz -C /opt/Yubico\ Authenticator/"
       # - "rm -f yubico-authenticator-latest-linux.tar.gz"
   
   - type: fonts
