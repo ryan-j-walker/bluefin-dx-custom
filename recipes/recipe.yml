@@ -41,6 +41,7 @@ modules:
         - org.gnome.Calendar
         - org.gnome.Connections
         - org.gnome.Contacts
+        - org.gnome.Maps
         - org.mozilla.firefox
         - org.mozilla.Thunderbird
     # user: {} # Also add Flathub user repo, but no user packages
