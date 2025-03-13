@@ -63,7 +63,7 @@ modules:
     install:
       - Alphabetical App Grid
       - Coverflow Alt-Tab
-      - Dash to Panel
+      - Hot Edge
       - Just Perfection
       - Weather O'Clock
     uninstall:
@@ -72,7 +72,6 @@ modules:
       - GSConnect
       - Logo Menu
       - Search Light
-      - Tailscale QS
   
   - type: initramfs
 
