@@ -66,6 +66,8 @@ modules:
       - Coverflow Alt-Tab
       - Hot Edge
       - Just Perfection
+      - OSD Volume Number
+      - Quick Settings Audio Panel
       - Weather O'Clock
     uninstall:
       - Caffeine
